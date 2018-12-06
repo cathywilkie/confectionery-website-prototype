@@ -118,7 +118,7 @@ ul {
   background-color: #edce26;
 }
 
-/* @media only screen and (min-width: 25em) {
+@media only screen and (min-width: 25em) {
 
   html {
     font-size: 100%;
@@ -146,22 +146,6 @@ ul {
     line-height: 1.4;
   }
 
-  .card {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
-  }
-
-  .card-img {
-    display: block;
-  }
-
-  .card-body {
-    display: block;
-    width: 100%;
-    padding: 0 .75rem;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -179,17 +163,4 @@ ul {
     font-size: 130%;
   }
 
-  .card-img {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .card-body {
-    display: inline-block;
-    width: 74%;
-    vertical-align: middle;
-    padding-left: .75em;
-  }
-
 }
-*/
