@@ -76,12 +76,46 @@ nav li a:hover {
 background-color: #da3b46;
 }
 
+section {
+  display: flex;
+}
+
 ul {
   list-style-type: none;
 }
 
-.about-us {
-  display:
+.img-flex-aboutus {
+  display: block;
+  width: 100%;
+}
+
+.caption-aboutus {
+  position: absolute;
+  top: .5em;
+  left: 1.5rem;
+  color: #000;
+  background-color: #e2e2e2;
+  padding: 1rem;
+}
+
+.caption-aboutus {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.caption-aboutus h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1.3rem;
+}
+
+.menu-title {
+  display: block;
+  font-size: 2em;
+  color: #fff;
+  background-color: #edce26;
 }
 
 /* @media only screen and (min-width: 25em) {
