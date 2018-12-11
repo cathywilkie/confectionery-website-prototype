@@ -124,8 +124,24 @@ ul {
   background-color: #f3d633;
 }
 
-.menu {
+.hours-list {
+  display: block;
+  margin: 1rem;
+  font-size: .875rem;
+  padding: 1rem;
+  border: 2px solid #078881;
+}
 
+.hours-list dt {
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+  width: 35%;
+}
+
+.hours-list dd {
+  display: inline-block;
+  margin: 0;
 }
 
 .img-flex {
@@ -144,7 +160,7 @@ ul {
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: #078881
+  background-color: #078881;
 }
 
 .backtop {
