@@ -7,24 +7,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <div class="header-icons">
-      <img class="hamburger-icon" src="images/nav-icon.svg" alt="">
-      <h1>Hiyoto Café</h1>
-      <img class="search-icon" src="images/baseline-search-24px.svg" alt="">
+    <div class="header-content">
+      <div class="header-icons">
+        <a class="hamburger-icon" href="#"><img src="images/nav-icon.svg" alt=""></a>
+        <h1>Hiyoto Cafe</h1>
+        <a class="search-icon" href="#"><img src="images/baseline-search-24px.svg" alt=""></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Our Cafe</a></li>
+          <li><a href="#">Hours</a></li>
+          <li><a href="#">Français</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Our Café</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Français</a></li>
-      </ul>
-    </nav>
+    <div>
+      <img class="floral-design" src="images/backgroundpastelfloral.png" alt="">
+    </div>
   </header>
 
   <main>
@@ -39,11 +45,23 @@
     </section>
 
     <section>
+      <h2 class="hours-title">Hours</h2>
+      <dl class="hours-list">
+        <dt>Mon - Thu</dt>
+        <dd>7am to 4pm</dd>
+        <dt>Fri - Sat</dt>
+        <dd>8am - 10pm</dd>
+        <dt>Sunday</dt>
+        <dd>Closed</dd>
+      </dl>
+    </section>
+
+    <section>
       <h2 class="menu-title">Menu</h2>
       <ul class="menu">
         <li class="hotbeverage">
           <div class="card2-img">
-            <img class="img-flex" src="images/hercules.svg" alt="">
+            <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
           </div>
           <div class="contentmenu">
             <h3>Hot Beverage</h3>
@@ -53,7 +71,7 @@
 
         <li class="coldbeverage">
           <div class="card3-img">
-            <img class="img-flex" src="images/ornate.svg" alt="">
+            <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
           </div>
           <div class="contentmenu">
             <h3>Cold Beverage</h3>
@@ -63,7 +81,7 @@
 
         <li class="bakedgoods">
           <div class="card4-img">
-            <img class="img-flex" src="images/hercules.svg" alt="">
+            <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
           </div>
           <div class="contentmenu">
             <h3>Baked Goods</h3>
@@ -73,7 +91,7 @@
 
         <li class="pastries">
           <div class="card5-img">
-            <img class="img-flex" src="images/ornate.svg" alt="">
+            <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
           </div>
           <div class="contentmenu">
             <h3>Pastries</h3>
@@ -84,7 +102,7 @@
     </section>
 
     <section>
-      <h2>Barista's special of the week</h2>
+      <h2 class="barista-title">Barista's special of the week</h2>
       <ul class="barispecial">
         <li class="special">
           <div class="card6-img">
@@ -99,7 +117,7 @@
     </section>
 
     <section>
-      <h2>Location</h2>
+      <h2 class="location-title">Location</h2>
       <div class="map-img">
         <img src="images/atlas.svg" alt="">
       </div>
@@ -107,23 +125,11 @@
         <p class="text">this is the address</p>
       </div>
     </section>
-
-    <section>
-      <h2>Contact Us</h2>
-      <ul class="form">
-        <li class="forminfo">
-          <span>name</span>
-          <span>email</span>
-          <span>comments</span>
-        </li>
-      </ul>
-    </section>
   </main>
 
   <footer>
-    <a href="#"><img src="images/-" alt="Back to Top"></a>
+    <a class="backtop" href="#"><img src="images/backtotop.svg" alt="Back to Top"></a>
     <nav class="links">
-      <h2>Company</h2>
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Menu</a></li>
@@ -135,7 +141,6 @@
     <ul class="social">
       <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
       <li><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
-      <li><a href="#"><img src="images/youtube.svg" alt="YouTube"></a></li>
     </ul>
 
     <small class="copyright">© 2018 Hiyoto Café</small>
