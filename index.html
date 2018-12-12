@@ -16,14 +16,18 @@
     <div class="header-icons">
       <a class="hamburger-icon-a" href="#"><img class="hamburger-icon" src="images/nav-icon.svg" alt=""></a>
       <h1>Hiyoto Cafe</h1>
-      <a href="#"><img class="search-icon" src="images/baseline-search-24px.svg" alt=""></a>
+      <div class="header-right">
+        <a class="lang" href="#">Fr</a>
+        <span>|</span>
+        <a class="search-icon-a" href="#"><img class="search-icon" src="images/baseline-search-24px.svg" alt=""></a>
+      </div>
     </div>
     <nav>
       <ul>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Our Cafe</a></li>
         <li><a href="#">Location &amp; Hours</a></li>
-        <li><a href="#">Français</a></li>
+        <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +38,7 @@
         <img class="img-flex-aboutus" src="images/the-hideout-cafe.jpg" alt="">
         <figcaption class="caption-aboutus">
           <h2>Welcome!</h2>
-          <p>The Hiyoto Cafe was founded in 2013 by the great Jonathan Wilkie, with passion and dedication. Since, the Hiyoto Cafe has known multiple updates. We take pride in our premium robotic barista chicks raised by japenese Masters. Always ready to serve the best choice of biologic coffee from the Moo-Moo Island, we hope everything will surpass your expectation!</p>
+          <p>The Hiyoto Cafe was founded in 2013 by the great Jonathan Wilkie, with passion and dedication. Since then, the Hiyoto Cafe has known multiple updates. We take pride in our premium robotic barista chicks raised by japanese Masters. Always ready to serve the best choice of biologic coffee from the Moo-Moo Island, we hope everything will surpass your expectation!</p>
         </figcaption>
       </figure>
     </section>
@@ -44,35 +48,43 @@
       <ul class="menu">
 
         <li class="hotbeverage">
-          <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
-          <div class="content-menu">
-            <h3>Hot Beverage</h3>
-            <p class="text">Coffee, tea, hot chocolate, and everything hot, wink wink</p>
-          </div>
+          <a href="#">
+            <img class="img-flex" src="images/hotchocolate.jpg" alt="">
+            <div class="content-menu">
+              <h3>Hot Beverages</h3>
+              <p class="text">Coffee, Tea, Hot chocolate, Burning Apple Cider, Chick &amp; Noodles Soup in a Mug</p>
+            </div>
+          </a>
         </li>
 
         <li class="coldbeverage">
-          <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
-          <div class="content-menu">
-            <h3>Cold Beverage</h3>
-            <p class="text">Ice-tea, water, melted ice</p>
-          </div>
+          <a href="#">
+            <img class="img-flex" src="images/limonade.jpg" alt="">
+            <div class="content-menu">
+              <h3>Cold Beverages</h3>
+              <p class="text">Ice-tea, Limonade, Melted ice, Milkshakes, Shmoooothies!</p>
+            </div>
+          </a>
         </li>
 
         <li class="bakedgoods">
-          <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
-          <div class="content-menu">
-            <h3>Baked Goods</h3>
-            <p class="text">Scones, muffins, buns, banana bread, cakesss</p>
-          </div>
+          <a href="#">
+            <img class="img-flex" src="images/scones.jpg" alt="">
+            <div class="content-menu">
+              <h3>Baked Goods</h3>
+              <p class="text">Scones, muffins, buns, banana bread, cakesss</p>
+            </div>
+          </a>
         </li>
 
         <li class="pastries">
-          <img class="img-flex" src="images/placeholder-1by1.svg" alt="">
-          <div class="content-menu">
-            <h3>Pastries</h3>
-            <p class="text">Croissant, chocolatine, everything fancy french people created</p>
-          </div>
+          <a href="#">
+            <img class="img-flex" src="images/croissants.jpg" alt="">
+            <div class="content-menu">
+              <h3>Pastries</h3>
+              <p class="text">Croissant, chocolatine, everything fancy french people created</p>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
@@ -91,15 +103,12 @@
       <h2 class="location-title">Location &amp; Hours</h2>
       <img class="map-img" src="images/map.png" alt="">
       <div class="hours-address">
-        <p class="address">400 Katujivik Street, Kuujjuaq, QC J0M R1Z </p>
+        <p class="address">400 Katujivik Street, Kuujjuaq, QC J0M&nbsp;R1Z </p>
         <dl class="hours-list">
-            <dt>Mon - Thu</dt>
-            <dd>7 am to 10 pm</dd>
-            <dt>Fri - Sat</dt>
-            <dd>8 am - 12 pm</dd>
-            <dt>Sunday</dt>
-            <dd>Closed</dd>
-          </dl>
+          <div><dt>Mon - Thu</dt><dd>7 am to 10 pm</dd></div>
+          <div><dt>Fri - Sat</dt><dd>8 am - 12 pm</dd></div>
+          <div><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
       </div>
     </section>
   </main>

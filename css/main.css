@@ -62,13 +62,24 @@ header {
   margin: 0 0 1rem;
 }
 
-.header-icons a {
+.search-icon-a, .hamburger-icon-a {
   display: inline-block;
 }
 
 .hamburger-icon {
   min-width: 24px;
   width: 24px;
+}
+
+.lang {
+  display: none;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.header-right span {
+  display: none;
 }
 
 .search-icon {
@@ -88,8 +99,6 @@ h1 {
   white-space: nowrap;
   font-family: Lobster, cursive;
   color: #000;
-  -webkit-text-fill-color: #fff;
-  -webkit-text-stroke: .2px #000;
   font-size: 2.75em;
   text-align: center;
   margin: 0 1rem;
@@ -120,15 +129,8 @@ nav a:hover {
 .img-flex-aboutus {
   display: block;
   width: 100%;
-}
-
-.caption-aboutus {
-  position: absolute;
-  top: 2em;
-  left: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.288);
-  color: #fff;
-  padding: 1rem;
+  object-fit: cover;
+  max-height: 400px;
 }
 
 .content-aboutus {
@@ -136,6 +138,15 @@ nav a:hover {
   display: block;
   width: 100%;
   margin: 0;
+}
+
+.caption-aboutus {
+  position: absolute;
+  margin: 0 auto;
+  top: 30px;
+  background-color: rgba(0, 0, 0, 0.288);
+  color: #fff;
+  padding: 1rem;
 }
 
 .caption-aboutus h2 {
@@ -157,25 +168,44 @@ nav a:hover {
 .menu li {
   position: relative;
   margin: 1rem;
+  width: 100%;
+}
+
+.menu li a {
+  display: block;
+  width: 100%;
+}
+
+.menu li:hover .img-flex {
+  opacity: .5;
 }
 
 .img-flex {
   display: block;
+  object-fit: cover;
   width: 100%;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 .content-menu {
   position: absolute;
   bottom: 0;
   left: 25%;
+  background-color: rgba(0, 0, 0, 0.418);
+  color: #fff;
+  padding: .75rem;
+  margin: 0 .75rem .75rem 0;
 }
 
 .content-menu h3 {
-  margin: 0;
+  margin: 0 0 .75rem;
 }
 
 .content-menu p {
-  margin: 1rem 1rem 1rem 0;
+  margin: 0;
 }
 
 /* ==========================================
@@ -212,8 +242,8 @@ nav a:hover {
 }
 
 .hours-address {
-  display: block;
-  max-width: 300px;
+  display: inline-block;
+  max-width: 400px;
   margin: 1rem;
   font-size: .875rem;
   padding: 1rem;
@@ -234,13 +264,13 @@ nav a:hover {
 .hours-list dt {
   font-weight: bold;
   display: inline-block;
-  text-align: left;
-  width: 35%;
+  width: 50%;
 }
 
 .hours-list dd {
   display: inline-block;
   margin: 0;
+  width: 50%;
 }
 
 /* ==========================================
@@ -291,26 +321,37 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-  header {
-    background-image: url(../images/backgroundpastelfloral.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   nav a {
     display: inline-block;
     align-items: center;
     color: #fff;
     text-decoration: none;
     font-weight: medium;
-    padding: .5em .4em .75em;
-    margin: .3em;
+    padding: .5em .4em;
+    margin: .2em;
     background-color: #31beb7;
     border-radius: 5px;
   }
 
+  .lang {
+    display: inline-block;
+  }
+
+  .header-right span {
+    display: inline;
+  }
+
   .hamburger-icon-a {
     visibility: hidden;
+    width: 60px;
+  }
+
+  .header-right {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
   }
 
   .search-icon {
