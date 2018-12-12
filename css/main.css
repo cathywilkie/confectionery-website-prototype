@@ -144,7 +144,7 @@ nav a:hover {
   position: absolute;
   margin: 0 auto;
   top: 30px;
-  background-color: rgba(0, 0, 0, 0.288);
+  background-color: rgba(0, 0, 0, .288);
   color: #fff;
   padding: 1rem;
 }
@@ -194,7 +194,7 @@ nav a:hover {
   position: absolute;
   bottom: 0;
   left: 25%;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(0, 0, 0, .418);
   color: #fff;
   padding: .75rem;
   margin: 0 .75rem .75rem 0;
@@ -213,7 +213,7 @@ nav a:hover {
 ========================================== */
 
 .barista-special {
-  background-image: url(../images/chalkboard.jpg);
+  background-image: url("../images/chalkboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 1rem;
@@ -264,13 +264,13 @@ nav a:hover {
 .hours-list dt {
   font-weight: bold;
   display: inline-block;
-  width: 50%;
+  width: 48%;
 }
 
 .hours-list dd {
   display: inline-block;
   margin: 0;
-  width: 50%;
+  width: 48%;
 }
 
 /* ==========================================
@@ -326,7 +326,7 @@ footer {
     align-items: center;
     color: #fff;
     text-decoration: none;
-    font-weight: medium;
+    font-weight: 500;
     padding: .5em .4em;
     margin: .2em;
     background-color: #31beb7;
