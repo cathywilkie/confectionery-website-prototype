@@ -398,7 +398,6 @@ footer {
     line-height: 1.5;
   }
 
-  /*
   .img-flex-aboutus {
     display: inline-block;
     max-width: 40%;
@@ -420,9 +419,10 @@ footer {
   .caption-aboutus h2 {
     color: #000;
   }
-  */
 
-  nav
+  nav ul li {
+    display: none;
+  }
 
   .hours-address {
     display: block;
