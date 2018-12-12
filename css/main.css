@@ -44,7 +44,8 @@ h2 {
   text-align: center;
   font-size: 2em;
   color: #fff;
-  background-color: #f3d633;
+  background-color: #f7db40;
+  margin: 1rem 0 0;
 }
 
 section {
@@ -57,7 +58,7 @@ section {
 
 header {
   width: 100%;
-  background-color: #f3d633;
+  background-color: #f7db40;
   color: #fff;
   margin: 0 0 1rem;
 }
@@ -97,9 +98,9 @@ header {
 
 h1 {
   white-space: nowrap;
-  font-family: Lobster, cursive;
+  font-family: Merienda, cursive;
   color: #000;
-  font-size: 2.75em;
+  font-size: 1.5em;
   text-align: center;
   margin: 0 1rem;
 }
@@ -109,9 +110,7 @@ nav ul li {
 }
 
 nav ul {
-  text-align: center;
-  margin: 0 auto;
-  list-style-type: none;
+  display: none;
 }
 
 nav a {
@@ -227,6 +226,10 @@ nav a:hover {
   color: #fff;
 }
 
+.content-special h3 {
+  text-decoration: underline wavy;
+}
+
 /* ==========================================
  Location & Hours
 ========================================== */
@@ -239,6 +242,7 @@ nav a:hover {
   display: inline-block;
   padding: 0 1rem;
   max-width: 500px;
+  margin-top: 1rem;
 }
 
 .hours-address {
@@ -321,6 +325,13 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
+  nav ul {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+
   nav a {
     display: inline-block;
     align-items: center;
@@ -331,6 +342,10 @@ footer {
     margin: .2em;
     background-color: #31beb7;
     border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   .lang {
@@ -367,6 +382,13 @@ footer {
     line-height: 1.4;
   }
 
+  .menu li {
+    max-width: 270px;
+  }
+
+  .content-menu {
+    font-size: .8em;
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -374,6 +396,37 @@ footer {
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  /*
+  .img-flex-aboutus {
+    display: inline-block;
+    max-width: 40%;
+  }
+
+  .content-aboutus {
+    position: static;
+    width: 60%;
+  }
+
+  .caption-aboutus {
+    display: flex;
+    position: static;
+    background-color: initial;
+    color: #000;
+    margin: 0;
+  }
+
+  .caption-aboutus h2 {
+    color: #000;
+  }
+  */
+
+  nav
+
+  .hours-address {
+    display: block;
+    margin: auto 0;
   }
 
 }
