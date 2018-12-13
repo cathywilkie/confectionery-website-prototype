@@ -155,6 +155,10 @@ nav a:hover {
   background-color: initial;
 }
 
+.caption-aboutus p:nth-child(3) {
+  display: none;
+}
+
 /* ==========================================
  MENU
 ========================================== */
@@ -212,13 +216,18 @@ nav a:hover {
 ========================================== */
 
 .barista-special {
+  text-align: center;
+}
+
+.board {
+  display: inline-block;
   background-image: url("../images/chalkboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 1rem;
   padding: 1rem;
   border: 5px solid rgb(114, 80, 16);
   border-radius: 4px;
+  margin-top: 1rem;
 }
 
 .content-special {
@@ -230,23 +239,31 @@ nav a:hover {
   text-decoration: underline wavy;
 }
 
+.img-scones {
+  display: none;
+}
+
 /* ==========================================
  Location & Hours
 ========================================== */
 
 .location-section {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .map-img {
   display: inline-block;
   padding: 0 1rem;
   max-width: 500px;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 .hours-address {
   display: inline-block;
+  text-align: center;
   max-width: 400px;
   margin: 1rem;
   font-size: .875rem;
@@ -383,11 +400,23 @@ footer {
   }
 
   .menu li {
-    max-width: 270px;
+    width: 50%;
+    margin: 0;
+    padding: 1rem;
   }
 
   .content-menu {
     font-size: .8em;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+
+  .board {
+    max-width: 550px;
+  }
+
+  .caption-aboutus p:nth-child(3) {
+    display: block;
+  }
 
 }
 
@@ -400,33 +429,60 @@ footer {
 
   .img-flex-aboutus {
     display: inline-block;
-    max-width: 40%;
+    max-width: 35%;
+    margin-top: .5rem;
   }
 
   .content-aboutus {
     position: static;
-    width: 60%;
+    align-items: center;
+    display: flex;
   }
 
   .caption-aboutus {
-    display: flex;
+    display: inline-block;
     position: static;
     background-color: initial;
     color: #000;
-    margin: 0;
+    max-width: 50%;
+    margin-left: 1rem;
   }
 
   .caption-aboutus h2 {
     color: #000;
   }
 
-  nav ul li {
-    display: none;
+  .menu {
+    justify-content: center;
+  }
+
+  .menu li {
+    width: 350px;
   }
 
   .hours-address {
     display: block;
-    margin: auto 0;
+  }
+
+  .barista-special {
+    position: relative;
+    margin: 1rem;
+  }
+
+  .img-scones {
+    position: absolute;
+    top: 3rem;
+    left: calc(50% + 240px);
+    transform: rotate(20deg);
+    display: inline-block;
+    width: 200px;
+    border: 4px solid #ddd;
+    border-radius: 3px;
+    margin: 1rem;
+  }
+
+  .location-section {
+    justify-content: center;
   }
 
 }
